@@ -22,7 +22,7 @@ const Sidebar = () => {
 
   return (
     <div className="w-64 bg-gray-100 p-4 border-r border-gray-300 h-screen">
-      <h2 className="text-xl font-bold mb-4">Elements</h2>
+      <h2 className="text-xl font-bold mb-4 text-black">Elements</h2>
       <div className="space-y-2">
         {elements.map((item) => (
           <DraggableElement key={item.id} item={item} />

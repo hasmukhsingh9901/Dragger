@@ -20,25 +20,25 @@ const EditableComponent = ({ component, onRemove, onEdit }) => {
       case COMPONENT_TYPES.TEXT:
         return editing ? (
           <textarea
-            className="w-full p-2 border"
+            className="w-full p-2 border text-black"
             value={content}
             onChange={(e) => setContent(e.target.value)}
             autoFocus
           />
         ) : (
-          <p className="mb-2">{content || "Text block (click to edit)"}</p>
+          <p className="mb-2 text-black">{content || "Text block (click to edit)"}</p>
         );
       case COMPONENT_TYPES.HEADING:
         return editing ? (
           <input
             type="text"
-            className="w-full p-2 border text-xl font-bold"
+            className="w-full p-2 border text-xl font-bold text-black"
             value={content}
             onChange={(e) => setContent(e.target.value)}
             autoFocus
           />
         ) : (
-          <h2 className="text-xl font-bold mb-2">
+          <h2 className="text-xl font-bold mb-2 text-black">
             {content || "Heading (click to edit)"}
           </h2>
         );
@@ -46,7 +46,7 @@ const EditableComponent = ({ component, onRemove, onEdit }) => {
         return editing ? (
           <input
             type="text"
-            className="w-full p-2 border"
+            className="w-full p-2 border text-black"
             value={content}
             onChange={(e) => setContent(e.target.value)}
             autoFocus
@@ -67,7 +67,7 @@ const EditableComponent = ({ component, onRemove, onEdit }) => {
                   {editing ? (
                     <input
                       type="text"
-                      className="w-full p-2 border"
+                      className="w-full p-2 border text-black"
                       placeholder="Enter image URL"
                       value={content}
                       onChange={(e) => setContent(e.target.value)}

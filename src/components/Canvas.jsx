@@ -12,7 +12,7 @@ const Canvas = ({ components, onDrop, onRemoveComponent, onEditComponent }) => {
     return (
       <div className="flex-1 p-4 bg-white overflow-y-auto">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6">Website Preview</h2>
+          <h2 className="text-2xl font-bold mb-6 text-zinc-700">Website Preview</h2>
           
           {sections.map((section) => (
             <div key={section.id} className="mb-8">

@@ -13,7 +13,7 @@ const DraggableElement = ({ item }) => {
     <div
       ref={drag}
       className={`p-2 bg-white border border-gray-300 rounded cursor-move ${
-        isDragging ? "opacity-50" : "opacity-100"
+        isDragging ? "opacity-50 text-black" : "opacity-100 text-black"
       }`}
     >
       {item.label}
